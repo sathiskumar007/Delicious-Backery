@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Check html</title>
+    <style>
+        /* nav bar */
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration-style: none;
+        }
+
+        /* nav {
+            height: 80px;
+            width: 100%;
+            background-color: #441F13;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            font-family: font;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(233, 231, 231);
+            font-size: 20px;
+
+        }
+
+        #ham-icon {
+            font-size: 28px;
+            display: none;
+        }
+
+        nav input {
+            display: none;
+        }
+
+        .logo1 {
+            width: 50px;
+            height: 50px;
+            rotate: 345deg;
+        } */
+
+        /* navbar end */
+
+        /* .banner {
+            width: 100%;
+            height: auto;
+            display: flex;
+            position: relative;
+        }
+
+        .banner-img img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: -1;
+        }
+
+        .banner-content { */
+        /* width: 80%;
+            height: auto;
+            top: 55%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 10px;
+            padding-left: 25px;
+            color: #fff;
+            position: absolute;
+            font-weight: bold;
+        }
+
+        .banner-content button {
+            background-color: rgba(108, 4, 4, 0.867);
+            color: white;
+            font-family: jua;
+            padding: 5px 10px 5px 10px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .banner-content p {
+            font-size: 9px;
+            font-weight: normal;
+
+        }
+
+        .banner-content button:hover {
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        @media (max-width:768px) {
+            nav #ham-icon {
+                width: 50px;
+                height: 50px;
+                display: block;
+                order: 3;
+                color: white;
+            }
+
+            nav ul {
+                position: absolute;
+                height: 280px;
+                width: 100%;
+                top: -100%;
+                flex-direction: column;
+                gap: 5px;
+                transition-duration: 1s;
+                z-index: -1;
+            }
+
+            nav ul li {
+                height: 150px;
+                width: 57%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #check-btn:checked~ul {
+                top: 80px;
+                left: 0px;
+                background-color: blue;
+            }
+
+        }
+        @media(max-width:425px){
+            nav #ham-icon {
+                width: 50px;
+                height: 50px;
+                display: block;
+                order: 3;
+                color: white;
+                z-index: 2;
+            }
+
+            nav ul {
+                position: absolute;
+                height: 280px;
+                width: 100%;
+                top: -100%;
+                flex-direction: column;
+                gap: 5px;
+                transition-duration: 1s;
+                z-index: -1;
+            }
+
+            nav ul li {
+                height: 150px;
+                width: 57%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #check-btn:checked~ul {
+                top: 80px;
+                left: 0px;
+                background-color: blue;
+            }
+        } */
+
+        /* .ourrecipie {
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 4%;
+            justify-content: center;
+            padding-left: 4%;
+            padding-bottom: 6%;
+        }
+
+        .ourrecipie .one {
+            width: 25%;
+            height: auto;
+            display: flex;
+            position: relative;
+        } */
+
+        h4 {
+            text-align: center;
+        }
+
+        /* .ourrecipie .one img {
+            width: 80%;
+            height: auto;
+            
+        }
+
+        .ourrecipie .one .inner-one {
+            width: 79%;
+            height: auto;
+            position: absolute;
+        }
+
+        .ourrecipie .one .inner-one img {
+            width: 54px;
+            height: 54px;
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .ourrecipie .one .inner-one .btn {
+            color: white;
+            background-color: rgb(31, 28, 28);
+            padding: 10px 30px 10px 30px;
+            position: absolute;
+            font-family: jua;
+            margin-top: 230px;
+            margin-left: 20%;
+            font-size: 20px;
+            border-radius: 30px;
+        }
+
+        .ourrecipie .one .inner-one .btn:hover {
+            color: black;
+            background-color: white;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <section>
+        <nav>
+            <label for="check-btn" id="ham-icon"><i class="fa-solid fa-burger"></i></label>
+            <input type="checkbox" name="" id="check-btn">
+            <img src="./img/Asset 7@4x.png" alt="" class="logo1">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="Recipie.html">RECIPES</a></li>
+                <li><a href="ourstories.html">OURSTORIES</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#"><img src="img/Shopping Cart.png" alt="" width="24px" height="20px"></a></li>
+                <li><a href="#"><img src="img/Customer.png" alt="" width="24px" height="20px"></a></li>
+            </ul>
+        </nav>
+    </section> -->
+    <!-- banner section -->
+    <!-- <section>
+        <div class="banner">
+            <div class="banner-img">
+                <img src="./img/banner.png" alt="">
+            </div>
+            <div class="banner-content">
+                <p>Together, With Our Great Delicious Bakery <br>Family, We Enjoy Bringing You Our Favourite</p>
+                <h2>MAKING YOUR FAVOURITE CAKES AND COOKIES</h2>
+                <button>VIEW MORE</button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <div class="gird-container">
+        <div class="card-container">
+            <div class="card">
+                <img class="img1" src="./img/fav1.jpg" alt="">
+            </div>
+            <div class="card">
+                <img class="img2" src="./img/make1.jpg" alt=""> <br><br>
+                <span class="orange">Cook Experience</span><br><br>
+                <p class="para">We cook the food by putting great experience <br> and the right spices to make
+                    the
+                    food teste good.<br> Great dishes differ all across the world
+                </p>
+            </div>
+            <div class="card">
+                <p class="orange">Welcome To World Of Teaste</p>
+                <h1>A Tasty Food Is What You Deserve</h1><br>
+                <span>Everyone deserves to indulge in delicious food that brings joy and satisfaction. A well-prepared
+                    meal can uplift your mood, create lasting memories, and provide comfort. Whether it's a gourmet dish
+                    or a simple homemade recipe, enjoying tasty food is a pleasure everyone should experience. Treat
+                    yourself to the flavors you love—you deserve it! </span><br>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Only Fresh Food</li><br>
+                    <li><i class="fa-solid fa-check"></i> Quality Certified</li><br>
+                    <li><i class="fa-solid fa-check"></i> Wide Range of Dishes</li><br>
+                    <li><i class="fa-solid fa-check"></i> Easy To Order</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img class="img3" src="./img/chefimg.jpg" alt="">
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="container">
+        <img src="./img/deliciouss.png" alt="">
+    </div> -->
+    <style>
+        /* .container {
+            position: relative;
+            overflow: hidden;
+            max-width: 300px;
+            z-index: 1;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #e5e5e5;
+            opacity: 0;
+            transition: .5s ease all;
+        }
+
+        img {
+            transition: .5s ease all;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .container:hover img {
+            transform: scale(1.1);
+        }
+
+        .container:hover::after {
+            opacity: 0.2;
+        }
+
+        .gird-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .card-container {
+            width: 100%;
+            height: 100%;
+            max-width: 2500px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            margin-left: 40px;
+            gap: 20px;
+        } */
+
+        /* .card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 0.5s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #e5e5e5;
+            opacity: 0;
+            transition: .5s ease all;
+        }
+
+        img {
+            transition: .5s ease all;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card img {
+            width: 80%;
+        }
+
+        .orange {
+            color: gold;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        .fa-solid {
+            color: gold;
+            padding-right: 20px;
+        }
+
+        .card ul {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .img1,
+        .img2,
+        .img3 {
+            border-radius: 20px;
+        }
+
+
+        .card .img1:hover,
+        .card .img2:hover,
+        .card .img3:hover {
+            transform: scale(1.2);
+        }
+
+        .img2 {
+            border-radius: 20px;
+            height: 200px;
+            width: 100%;
+            transition: 0.5s;
+            object-fit: cover;
+        } */
+
+        /* .ourrecipie {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .one {
+            width: 30%;
+            height: 30px;
+        }
+
+        .one img {
+            position: absolute;
+            width: 20%;
+        }
+
+        .inner-one {
+            position: relative;
+            width: 80%;
+            height: 30px;
+        }
+
+        .inner-one img {
+            width: 45px;
+            height: 45px;
+            margin-left: 100%;
+            position: relative;
+            display: flex;
+            justify-content: end;
+        }
+
+        .btn {
+            width: 30%;
+            /* width: clamp(10%,30%,6); */
+        /* height: auto;
+        margin-top: 55%;
+        margin-left: 100%;
+        padding: 8px 20px;
+        background-color: rgba(108, 4, 4, 0.867);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        }
+
+        @media(max-width:2560px) {
+            .btn {
+                width: 40%;
+                font-size: 35px;
+            }
+        }
+
+        */
+    </style>
+
+    <section><br>
+        <!-- <h4>OUR RECIPIES</h4> -->
+
+        <!-- <div class="ourrecipie">
+            <div class="one">
+                <img src="./img/recipie.png" alt="" class="img">
+                <div class="inner-one">
+                    <img src="./img/hearticon_shadow.png" alt="" class="hearticon">
+                    <input class="btn" type="button" value="VIEW MORE">
+                </div>
+            </div><br> -->
+        <!-- <div class="one">
+                <img src="./img/recipieone.png" alt="" class="img">
+                <div class="inner-one">
+                    <img src="./img/hearticon_shadow.png" alt="" class="hearticon">
+                    <input class="btn" type="button" value="VIEW MORE">
+                </div>
+            </div><br>
+            <div class="one">
+                <img src="./img/recipietwo.png" alt="" class="img">
+                <div class="inner-one">
+                    <img src="./img/hearticon_shadow.png" alt="" class="hearticon">
+                    <input class="btn" type="button" value="VIEW MORE">
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!-- <section class="recipe">
+        <p>Most Favourite Recipies</p>
+        <h1>Choose & Taste What You Like</h1><br><br>
+        <hr class="hr">
+        <div class="recipie-content"> <br>
+            <div class="left">
+                <p>HONEY & APRICOT CAKE........................... .$11</p><br>
+                <p>APPLE & CINNAMON CAKE....................... .$11</p><br>
+                <p>SULTANA CAKE............................................ .$11</p><br>
+                <p>STRAWBERRY WHITE CHOC..................... .$11</p><br>
+                <p>ICED GINGER LOAF...................................... .$11</p>
+            </div>
+            <div class="right">
+                <p>HIGHLAND TEA BRACK............................... .$11</p><br>
+                <p>MADEIRA CAKE............................................. .$11</p><br>
+                <p>FRUIT SLICE 3s.............................................. .$11</p><br>
+                <p>CHOCOLATE BROWNIE .............................. .$11</p><br>
+                <p>ICED TOFFEE SLICE...................................... .$11</p>
+            </div>
+        </div> <br><br><br> -->
+    <!-- <div class="btn"> -->
+    <!-- <button>View More</button> -->
+    <!-- </div> -->
+
+
+
+
+    <!-- <section>
+        <div class="gallery-container">
+            <div class="image-container">
+                <img class="grid-img1" src="https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+                <img class="grid-img2" src="https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+                <img class="grid-img3" src="https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+                <img class="grid-img4" src="https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+                
+            </div>
+            <div class="image-container">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+                <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+                <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section> -->
+    <!-- <div class="grid"> -->
+    <!-- <div class="grid-container"> -->
+    <!-- <img class="grid-img1" src="https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+                <img class="grid-img2" src="https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+                <img class="grid-img3" src="https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+                <img class="grid-img4" src="https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%"> -->
+    <!-- </div> -->
+    <!-- </div>
+    </section> -->
+
+
+
+    <!-- <section>
+        <div class="grid-container">
+            <div class="left-container">
+                <img class="image-left" src="https://themewagon.github.io/baker/img/about-1.jpg" alt="">
+                <img class="image-right" src="https://themewagon.github.io/baker/img/about-2.jpg" alt="">
+            </div>
+            <div class="right-container">
+                <p>// ABOUT US</p>
+                <h2>We Bake Every Item From The Core Of Our Hearts</h2>
+                <p class="para">At Delicious Bakery, every item we create comes from the core of our hearts. Our passion
+                    for baking
+                    drives us to craft the finest treats that bring joy and delight to your table. From the moment you
+                    step into our bakery, you’ll experience the warmth and love that goes into each and every bite.</p>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <section>
+        <!-- <div class="our-team"> -->
+            <h4>our team</h4>
+            <h2 style="text-align: center; margin-bottom: 20px;"> Meet Our Master Chef</h2>
+            <div class="team-container">
+                <div class="card">
+                    <img src="https://themewagon.github.io/baker/img/team-1.jpg" alt="chief-img">
+                    <div class="content">
+                        <h3>Danial</h3>
+                        <p>Master Chief</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://themewagon.github.io/baker/img/team-2.jpg" alt="chief-img">
+                    <div class="content">
+                        <h3>James Camaoron</h3>
+                        <p>Master Chief</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://themewagon.github.io/baker/img/team-3.jpg" alt="chief-img">
+                    <div class="content">
+                        <h3>Robert</h3>
+                        <p>Master Chief</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://themewagon.github.io/baker/img/team-4.jpg" alt="chief-img">
+                    <div class="content">
+                        <h3>Tom</h3>
+                        <p>Master Chief</p>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </section>
+    <style>
+        .our-team {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .team-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 22%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            /* flex-direction: column; */
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card .content h3 {
+            font-size: clamp(10px,3vw,20px);
+        }
+        .card .content p{
+            font-size:  clamp(5px,2vw,14px);
+        }
+
+        .card .content {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: gold;
+            color: #f1f1f1;
+            width: 100%;
+            height:5%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            padding-top:clamp(5px,3vw,20px);
+            padding-bottom: clamp(5px,3vw,20px);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .card:hover .content {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 700px){
+            .team-container{
+                flex-wrap: wrap;
+                
+            }
+            .card{
+                width: 40%;
+            }
+        }
+        @media screen and (max-width: 425px){
+            .card{
+                width: 80%;
+            }
+            .card .content{
+                height: 20%!important;
+            }
+            .content h3{
+                font-size: clamp(16px,3vw,26px)!important;
+            }
+            .content p{
+                font-size:  clamp(9px,2vw,14px)!important;
+            }
+        }
+
+        /* .grid-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+
+        .left-container {
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .left-container img {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            filter:grayscale(1);
+            transition: 0.5s ease all;
+        }
+        .image-left {
+            padding-bottom: clamp(40px, 4vw, 100px)
+        }
+        .image-left:hover, .image-right:hover {
+            filter:grayscale(0);
+
+        }
+
+        .right-container {
+            width: 40%;
+            height: auto;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            gap: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .right-container h2{
+            font-size: clamp(15px, 3vw, 30px);
+        }
+        .right-container p {
+            font-size: clamp(10px, 4vw, 18px);
+            color: gold;
+        }
+
+        .para {
+            font-size: clamp(10px, 3vw, 16px) !important;
+            color: black !important;
+        }
+
+        @media screen and (max-width: 700px) and (min-width: 50px) {
+            .grid-container{
+                flex-direction: column;
+            }
+            .left-container img{
+                width: 40%;
+            }
+            .left-container{
+                width: 100%;
+                display: flex;
+                gap: 10px;
+            }
+            .right-container{
+                width: 95%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: clamp(5px, 4vw, 10px);
+            }
+            
+        } */
+
+
+        /* .grid{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .gird-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 0 4px;
+        }
+        .grid-img1, .grid-img2, .grid-img3, .grid-img4{
+            width: 200px;
+            height: 200px;
+        }
+        .grid-img1, .grid-img2, .grid-img3, .grid-img4:hover{
+            cursor: pointer;
+            width: 450px;
+            height: 250px;
+        } */
+        /* .gallery-container {
+            width: 100%;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        .grid-img1{
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            background-position: end;
+            background-size: cover;
+        }
+        .image-container {
+            width: 100%;
+            -ms-flex: 25%;
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .image-container {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .image-container {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .image-container {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        } */
+
+
+
+
+
+
+        /* .hr {
+    width: 80%;
+    height: 2px;
+    background-color: gold;
+    padding-left: 19%;
+}
+        .recipe {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 0px;
+            margin-top: 4%;
+            background-color: black;
+            color: white;
+        }
+
+        .recipe h1 {
+            font-size: clamp(18px, 3vw, 45px);
+            font-family: font1;
+            text-align: center;
+            color: white;
+        }
+
+        .recipe p {
+            font-size: 16px;
+            font-family: medium;
+            text-align: center;
+            color: gold;
+        }
+
+        .recipe .recipie-content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+            font-family: poppines;
+            margin-top: 50px;
+        }
+
+        .recipie-content .left {
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            font-size: clamp(10px, 3vw, 25px);
+        }
+
+        .recipie-content .right {
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            font-size: clamp(10px, 3vw, 25px);
+
+        }
+
+        .recipe button {
+            background-color: transparent;
+            color: gold;
+            font-family: font;
+            padding: 10px 30px 10px 30px;
+            border-radius: 8px;
+            font-size: 15px;
+            transition-duration: 0.3s;
+            font-weight: bolder;
+            border: 2px solid gold;
+            display: inline;
+        }
+
+        .recipe button:hover {
+            background-color: white;
+            color: black;
+            padding: 10px 30px 10px 30px;
+            font-size: 15px;
+            font-weight: bolder;
+            border: 2px solid black;
+        }
+
+        @media screen and (max-width:1440px) {
+            .recipe .recipie-content {
+                flex-direction: column;
+                margin-top: 10px;
+
+            }
+
+            .recipie-content .left {
+                width: 100%;
+                gap: 5px;
+            }
+
+            .recipie-content .right {
+                width: 100%;
+                gap: 5px;
+
+            }
+
+
+        } */
+    </style>
+</body>
+
+</html>

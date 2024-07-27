@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* body {
+            margin: 0px;
+            font-family: 'segoe ui';
+        }
+
+        .nav {
+            height: 50px;
+            width: 100%;
+            background-color: #4d4d4d;
+            position: relative;
+        }
+
+        .nav>.nav-header {
+            display: inline;
+        }
+
+        .nav>.nav-header>.nav-title {
+            display: inline-block;
+            font-size: 22px;
+            color: #fff;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .nav>.nav-btn {
+            display: none;
+        }
+
+        .nav>.nav-links {
+            display: inline;
+            float: right;
+            font-size: 18px;
+        }
+
+        .nav>.nav-links>a {
+            display: inline-block;
+            padding: 13px 10px 13px 10px;
+            text-decoration: none;
+            color: #efefef;
+        }
+
+        .nav>.nav-links>a:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        } */
+
+        /* .nav>#nav-check {
+            display: none;
+        } */
+        /* .checking{
+            padding: 20px 40px;
+                height: 400px;
+                width: 400px;
+                background-color: grey;
+                background-image: url('./img/recipie.png');
+                border-radius: 30px;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .checking .checking-inside
+            {
+                height: 80%;
+                width: 80%;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+              
+                           }
+            .checking .checking-inside img{
+                width: 100%;
+                height: auto;
+                bottom: 80%;
+            }
+          
+            .checking .checking-inside button{
+                padding:10px 45px;
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                border-radius: 40px;
+                font-family: arial;
+                outline:none;
+            }
+            .checking .checking-inside button:hover{
+                background-color: white;
+                color: black;
+                border: 2px solid black;
+            }
+            .checking2{
+            padding: 20px 40px;
+                height: 400px;
+                width: 400px;
+                background-color: grey;
+                background-image: url('./img/recipieone.png');
+                border-radius: 30px;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .checking3{
+            padding: 20px 40px;
+                height: 400px;
+                width: 400px;
+                background-color: grey;
+                background-image: url('./img/recipietwo.png');
+                border-radius: 30px;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            } */
+
+        /* @media (max-width:768px) {
+            .nav>.nav-btn {
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+
+            .nav>.nav-btn>label {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                padding: 13px;
+            }
+
+            .nav>.nav-btn>label:hover,
+            .nav #nav-check:checked~.nav-btn>label {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            .nav>.nav-btn>label>span {
+                display: block;
+                width: 25px;
+                height: 10px;
+                border-top: 2px solid #eee;
+            }
+
+            .nav>.nav-links {
+                position: absolute;
+                display: block;
+                width: 100%;
+                background-color: #333;
+                height: 0px;
+                transition: all 0.3s ease-in;
+                overflow-y: hidden;
+                top: 50px;
+                left: 0px;
+            }
+
+            .nav>.nav-links>a {
+                display: block;
+                width: 100%;
+            }
+
+            .nav>#nav-check:not(:checked)~.nav-links {
+                height: 0px;
+            }
+
+            .nav>#nav-check:checked~.nav-links {
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <!-- <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                JoGeek
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div> -->
+
+        <!-- <div class="nav-links">
+            <a href="" target="_blank">Github</a>
+            <a href="" target="_blank">Stackoverflow</a>
+            <a href="" target="_blank">LinkedIn</a>
+            <a href="" target="_blank">Codepen</a>
+            <a href="" target="_blank">JsFiddle</a>
+        </div> -->
+
+
+
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+            }
+
+
+
+            /* .makers .make {
+                width: 50%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .makers .make .makeImg {
+                width: 50%;
+                height: auto;
+                justify-content: end;
+            }
+
+            .makers .make .makeImg img {
+                width: 80%;
+                height: auto;
+
+            }
+
+            .makers .make .makeImg1 {
+                width: 50%;
+                height: auto;
+            }
+
+            .makers .make .makeImg1 img {
+                width: 50%;
+                height: auto;
+                border-radius: 30px;
+                background-size: cover;
+            }
+
+            .makers .makeImg2 {
+                width: 50%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .makers .makeImg2 .content1 {
+                width: 70%;
+                height: auto;
+            }
+
+            .makers .makeImg2 .make3 {
+                width: 30%;
+                height: auto;
+            }
+
+            .makers .makeImg2 .make3 img {
+                width: 100%;
+                height: 50%;
+            } */
+
+            @media(max-width:1024px) {
+                .makers {
+                    /* flex-wrap: wrap; */
+                    display: block;
+                }
+
+                .make {
+                    width: 100%;
+                }
+
+                .makeImg {
+                    width: 50%;
+                }
+
+                .makeImg1 {
+                    width: 50%;
+                }
+            }
+        </style>
+        <section>
+            <!-- <div class="makers">
+
+                <div class="makeImg">
+                    <img src="./img/chefimg.jpg" alt="">
+                </div>
+                <div class="makeImg1">
+                    <img src="./img/make1.jpg" alt=""> <br><br>
+                    <span>Cook Experience</span><br><br>
+                    <p class="para">We cook the food by putting great <br> experience and the right spices to
+                        make
+                        the
+                        food teste good . Great dishes <br>differ all across the world
+                    </p>
+                </div>
+
+
+
+                <div class="content1"><br>
+                    <p>Welcome To World Of Teaste</p>
+                    <h1>A Tasty Food Is What You Deserve</h1><br>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Veritatis quam laborum
+                        optio porro <br>
+                        voluptates, saepe quisquam! Eligendi fugiat nihil <br> odit nostrum voluptatem adipisci
+                        possimus nisi
+                        fugit quas, in aut ratione?</span> <br><br>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Only Fresh Food</li><br>
+                        <li><i class="fa-solid fa-check"></i> Quality Certified</li><br>
+                        <li><i class="fa-solid fa-check"></i> Wide Range of Dishes</li><br>
+                        <li><i class="fa-solid fa-check"></i> Easy To Order</li>
+                    </ul>
+                </div>
+                <div class="make3">
+                    <img src="./img/make33.png" alt="">
+                </div>
+
+            </div> -->
+        </section>
+        <!-- <section style="padding: 70px 70px;">
+            <div class="checking " >
+                <div class="checking-inside">
+                    <img src="./img/hearticon_shadow.png" alt="" >
+
+                    <button class="checkingBtnn">
+                        Viewmore
+                    </button>
+                </div>
+            </div>
+            <div class="checking2 " >
+                <div class="checking-inside">
+                    <button class="checkingBtnn">
+                        Viewmore
+                    </button>
+                </div>
+            </div>
+            <div class="checking3 " >
+                <div class="checking-inside">
+                    <button class="checkingBtnn">
+                        Viewmore
+                    </button>
+                </div>
+            </div>
+           </section> -->
+    </div>
+
+    <!-- <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 200%;
+            overflow-y: scroll;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: coral;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .box.show {
+            opacity: 1;
+            margin-left: 5%;
+            transform: translateY(0);
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', () => {
+            const boxes = document.querySelectorAll('.box');
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top;
+
+                if (boxTop < triggerBottom) {
+                    box.classList.add('show');
+                } else {
+                    box.classList.remove('show');
+                }
+            });
+        });
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section>
+        <div class="footer">
+            <div class="logo"><br>
+
+                <p>OWNERED BY</p><br>
+                <img src="img/Asset 7@4x.png" alt="">
+            </div>
+            <div class="aboutcont">
+                <div class="list1">
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Where To Buy</li>
+                        <li>Recipies</li>
+                        <li>Contact Us <br>
+                            <br>+91 9585876055
+                        </li>
+                    </ul>
+                </div><br><br><br><br>
+                <div class="list2">
+                    <li>2023 DELICIOUS BACKERY All Rights Reserved</li>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section>
+        <div class="footer">
+            <div class="logo">
+                <p>OWNED BY</p>
+                <a href=""> <img src="img/Asset 7@4x.png" alt=""></a>
+            </div>
+            <div class="aboutcont">
+                <ul class="list1">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Where To Buy</li>
+                    <li>Recipes</li>
+                    <li>Contact Us <br><br>
+                        <tel>+91 9585876055</tel>
+                    </li>
+                </ul>
+                <ul class="list2">
+                    <li>2023 DELICIOUS BAKERY All Rights Reserved</li>
+                </ul>
+            </div>
+            <div class="icon">
+                <div class="social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                </div> 
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- <section>
+        <div class="footer">
+            <div class="left-side">
+                <div class="logo"><br>
+                    <h4 class="tittle">OWNERED BY</h4><br>
+                    <img src="img/Asset 7@4x.png" alt="">
+                </div>
+                <div class="aboutcont">
+                    <h4 class="tittle">Birthday Cakes</h4> <br>
+                    <p>2 Hours Delivery Cakes</p>
+                    <p>Timeless Classics</p>
+                    <p>Dream cakes</p>
+                    <p>Classic Chocolate Cakes</p>
+                    <p>Indian Flavours</p>
+                    <p></p>
+                </div>
+                <div class="content2">
+                    <h4 class="tittle">Company</h4> <br>
+                    <p>About Us</p>
+                    <p>Our Team</p>
+                    <p>Our Cakes</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="content3">
+                    <h4 class="tittle">Hamper</h4> <br>
+                    <p>Precious Hamper</p>
+                    <p>Our Team</p>
+                    <p>Our Cakes</p>
+                    <p>Blog</p> 
+                </div>
+                <div class="content4">
+                    <h4 class="tittle">Cupcakes & Treats</h4> <br>
+                    <p>Classic cupcakes</p>
+                    <p>Themed cupcakes</p>
+                    <p>Our Cakes</p>
+                    <p>Dessert Jars</p>
+                </div>
+                <div class="icon">
+                    <h6>Connect With Us</h6>
+                    <div class="social">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section>
+        <div class="banner">
+            <div class="banner-content">
+                <p>Together, With Our Great Delicious Bakery <br>Family, We Enjoy Bringing You Our Favourite</p>
+                <h2>MAKING YOUR FAVOURITE CAKES AND COOKIES</h2>
+                <button class="btn">VIEW MORE</button>
+            </div>
+        </div>
+    </section> -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#441F13" fill-opacity="1"
+            d="M0,64L80,80C160,96,320,128,480,117.3C640,107,800,53,960,37.3C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+        </path>
+    </svg> -->
+    <!-- <div class="footer">
+
+        <div class="logo">
+            <img src="img/Asset 7@4x.png" alt="logo">
+        </div>
+        <div class="help">
+            <h3 class="tittle">Need Help?</h3>
+            <a href="#"> Store Location</a>
+            <a href="#">Delicious Backery Location</a>
+        </div>
+        <div class="rosource">
+            <h3 class="tittle">Resources</h3>
+            <a href="#">Our Story</a>
+            <a href="#">New Arrivals</a>
+        </div>
+        <div class="social">
+            <h3 class="tittle">Social</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+    <hr> -->
+    <!-- <div class="copyrights">
+        <p>Delicious Backery © 2023. All Rights Reserved</p>
+    </div> -->
+
+    <!-- <section>
+        <div class="submit">
+            <div class="subscribe">
+                <h1>Subscribe to our newsletter</h1>
+                <p>Get exclusive offers, latest news, recipes, and more</p>
+                <div class="input">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <style>
+        /* .submit {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .subscribe {
+            width: 60%;
+            max-width: 100%;
+            background-color: #441F13;
+            color: white;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column !important;
+            border-radius: 20px;
+        }
+
+        .input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* gap: 20px; */
+        /* width: 50%;
+            max-width: 100%;
+            flex-wrap: wrap;
+            transition: all 0.2s;
+        }
+
+        .input input {
+            width: 300px;
+            height: 30px;
+            border-radius: 5px 0px 0px 5px;
+            border: none;
+            padding-left: 10px;
+        }
+
+        .input button {
+            width: 150px;
+            max-width: 100%;
+            height: 30px;
+            border-radius: 0px 5px 5px 0px;
+            border: none;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        @media screen and (max-width: 800px) {
+            .button {
+                width: 100%;
+            }
+        } */
+    </style>
+    <!-- <div class="wrapper">
+        <div id="subscribebox">
+            <h3>Subscribe to our newsletter</h3>
+            <form>
+                <input type="text" placeholder="Enter email" id="email-input">
+                <input type="submit" value="Join" id="subscribe-button">
+            </form>
+        </div>
+    </div> -->
+    <!-- <section>
+        <div class="card-container ">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div><br><br>
+                <div class="card-content">
+                    <img src="./img/image 50.png" alt="">
+                    <p>CHOCOLATE SPARINKLES</p>
+                    <button>VIEW MORE</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div><br><br>
+                <div class="card-content">
+                    <img src="./img/image 51.png" alt="">
+                    <p>DESSERT FRUIT CAKE</p>
+                    <button>VIEW MORE</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div><br><br>
+                <div class="card-content">
+                    <img class="mm" src="./img/card3.png" alt="">
+                    <p>CREAM CAKE FOREST WHITE ICED</p>
+                    <button>VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+    <section>
+        <!-- <div class="contest1">
+            <div class="left">
+                <img src="img/deliciouss.png" alt="">
+            </div>
+            <div class="right">
+                <h4 style="font-family: semibold; ">WE HAVE DELICIOUS,</h4>
+                <h5 style="font-family: regpop;">SPECICALLY PREPARED ITEMS</h5>
+                <h1>PERFECT</h1>
+                <h1>FOE ANY</h1>
+                <h1>EVENT</h1>
+                <div class="btn">
+                    <button>SHOW MORE</button>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="contest-container">
+            <div class="inside-container">
+                <div class="left-side">
+                    <img src="./img/deliciouss.png" alt="">
+                </div>
+                <div class="right-side">
+                    <h4>WE HAVE DELICIOUS,</h4>
+                    <h5>SPECICALLY PREPARED ITEMS</h5>
+                    <h1>PERFECT</h1>
+                    <h1>FOE ANY</h1>
+                    <h1>EVENT</h1>
+                    <div class="btn">
+                        <button>SHOW MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inside-right-container">
+            <div class="left-side">
+                <h1>SHARED RECIPES</h1>
+                <h1>WITH YOUR FRIENDS</h1>
+                <h1>AND PARTNERS</h1>
+                <div class="btn">
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="right-side">
+                <img src="img/partner.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <style>
+        .contest-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .inside-container {
+            display: flex;
+            flex-direction: row;
+            max-width: 2500px;
+            width: 100%;
+            padding: 20px;
+            gap: 20px;
+            box-sizing: border-box;
+        }
+
+        .left-side,
+        .right-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .left-side img {
+            max-width: 100%;
+            height: auto;
+            width: 80%;
+        }
+
+        .right-side h4,
+        .right-side h5,
+        .right-side h1 {
+            margin: 10px 0;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 0.5s;
+        }
+
+        .right-side h4 {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+        }
+
+        .right-side h5 {
+            font-size: clamp(1rem, 3vw, 2rem);
+        }
+
+        .right-side h1 {
+            font-size: clamp(2rem, 3vw, 4rem);
+            color: black;
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 40px;
+            background-color: rgba(108, 4, 4, 0.867);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: 600;
+            border: 2px solid rgba(108, 4, 4, 0.867);
+        }
+
+        button:hover {
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .inside-container {
+                flex-direction: column;
+            }
+
+            .left-side,
+            .right-side {
+                flex: none;
+                width: 100%;
+            }
+
+            .left-side {
+                order: 2;
+            }
+
+            .right-side {
+                order: 1;
+            }
+
+            .right-side h4,
+            .right-side h5,
+            .right-side h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .right-side h4,
+            .right-side h5,
+            .right-side h1 {
+                font-size: 1rem;
+            }
+        }
+
+        /* contest2 */
+
+       
+        .inside-right-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 2500px;
+            margin: auto;
+        }
+
+        .left-side,
+        .right-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .left-side h1 {
+            margin: 10px 0;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 0.5s;
+            color: black;
+            font-size: clamp(2rem, 3vw, 4rem);
+        }
+
+        .right-side img {
+            max-width: 100%;
+            height: auto;
+            width: 80%;
+        }
+
+        .button1 {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .inside-right-container {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .left-side,
+            .right-side {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .left-side h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            button {
+                /* width: 100%; */
+                padding: 5px 20px ;
+                font-size: 10px;
+            }
+        }
+    </style>
+
+    <!-- <div class="contest2">
+    <div class="left1">
+        <h1>SHARED RECIPES</h1>
+        <h1>WITH YOUR FRIENDS</h1>
+        <h1>AND PARTNERS</h1>
+        <div class="button1">
+            <button>READ MORE</button>
+        </div>
+    </div>
+    <div class="right1">
+        <img src="img/partner.png" alt="">
+    </div>
+</div>
+ -->
+
+
+    <style>
+
+    </style>
+
+    <section>
+        <div style="margin-top: 6%;" class="about-container">
+            <h3>Sweet</h3>
+            <h1>FOR EVERY TASTE...</h1>
+            <p>Welcome to one of the biggest and the sweetest sweet stores all over the country! We launched our
+                business back <br> in 1998, and we grew from a local shop to a big store, which also delivers its
+                products
+                all over the country. We can<br> promise you, that regardless of your age, you will enjoy being at this
+                store. During last 18 years, we’ve been cherishing<br> the sweet business, enlarging the selection,
+                training
+                our staff, widening our customer audience.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <style>
+        .contest2 {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+
+        .contest2 .right {
+            width: 50%;
+            height: auto;
+        }
+
+        .contest2 .right img {
+            width: 100%;
+        }
+
+        .about-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: justify-all;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 10px;
+        }
+
+        .about-container h3,
+        h1 {
+            color: rgba(108, 4, 4, 0.658);
+        }
+
+        .about-container h1 {
+            font-size: clamp(30px, 4vw, 40px);
+        }
+
+        .about-container h3 {
+            font-size: 30px;
+        }
+
+        .about-container button {
+            background-color: rgba(108, 4, 4, 0.767);
+            color: white;
+            font-family: jua;
+            padding: 8px 35px;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-size: clamp(12px, 2vw, 15px);
+            font-weight: bold;
+            font-family: sans-serif;
+            border: none;
+            border: 2px solid rgba(108, 4, 4, 0.658);
+            ;
+        }
+
+        .about-container button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        /* .card-container {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,
+                    minmax(200px, 1fr));
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 5%;
+            gap: 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 60%;
+        }
+        .card p{
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .card {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 0px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .card .icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            float: right;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            left: 90%;
+        }
+
+        .card button {
+            background-color: rgba(108, 4, 4, 0.867);
+            color: white;
+            font-family: jua;
+            padding: 11px 35px;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-size: clamp(12px, 2vw, 16px);
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .card button:hover {
+            background-color: white;
+            color: black;
+        }
+
+
+        @media screen and (max-width: 1000px) and (min-width:100px) {
+            .card .icon {
+                width: 35px;
+                height: 35px;
+            }
+
+            .card .icon i {
+                font-size: 12px;
+            }
+
+            .card p {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .card button {
+                padding: 5px 25px;
+                font-size: 10px;
+            }
+        }
+
+
+
+
+
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #subscribebox {
+            width: 700px;
+            max-width: 100%;
+            margin: auto;
+            background: #B4CDED;
+            text-align: center;
+            border-radius: 4px;
+            padding: 60px 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        h3 {
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            font-weight: 700;
+            font-family: inherit;
+        }
+
+        #email-input {
+            width: 450px;
+            max-width: 100%;
+            font-family: inherit;
+            color: #344966;
+            text-align: left;
+            font-weight: 500;
+            border-radius: 2px;
+            border: 0px;
+            padding: 15px 0px 15px 20px;
+            font-size: 14px;
+            background: #F0F4EF;
+        }
+
+        #email-input:focus,
+        #email-input:hover {
+            outline: 0px;
+        }
+
+        #subscribe-button {
+            border: 0px;
+            width: 150px;
+            max-width: 100%;
+            font-size: 700;
+            padding: 15px;
+            font-size: 14px;
+            color: #F0F4EF;
+            font-family: inherit;
+            background: #344966;
+            cursor: pointer;
+            border-radius: 0px 2px 2px 0px;
+            outline: 0;
+            transition: all 0.2s;
+        }
+
+        #subscribe-button:hover {
+            background: #213144;
+        }
+
+        @media screen and (max-width: 700px) {
+            #subscribe-button {
+                width: 98%;
+                margin: 5px;
+                border-radius: 2px;
+            }
+
+            #email-input {
+                width: 98%;
+                margin: 5px;
+                text-align: center;
+            }
+
+            #subscribebox {
+                width: 100%;
+            }
+        }
+
+        svg {
+            position: relative; */
+        /* bottom: 0; */
+        /* z-index: -1; */
+        /* width: 100%;
+            height: auto;
+            position: relative;
+            display: flex;
+        }
+
+        .footer {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,
+                    minmax(450px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            color: white;
+            background-color: #441F13;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .footer .logo img {
+            width: 20%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            margin-left: 35%;
+        }
+
+        .footer .tittle {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .footer .logo,
+        .help,
+        .rosource,
+        .social {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .footer .logo,
+        .help>a,
+        .rosource>a,
+        .social>a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .copyrights {
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: #441F13;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        @media screen and (max-width:1440px) {
+            .footer {
+                grid-template-columns: repeat(auto-fit,
+                        minmax(200px, 1fr));
+                padding-left: 30px;
+                row-gap: 50px;
+            }
+        }
+
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('./img/banner.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            gap: 20px;
+        }
+
+        .banner-content {
+            position: absolute;
+            color: white;
+            text-align: center;
+            font-family: jua;
+            font-size: clamp(0.9375rem, 0.6908rem + 1.3158vw, 1.875rem);
+        }
+
+        .banner-content h2 {
+            font-size: clamp(1.25rem, 0.7566rem + 2.6316vw, 3.125rem);
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .banner-content h2,
+        p,
+        .btn {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .banner-content button {
+            background-color: rgba(108, 4, 4, 0.867);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 11px 35px;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-size: clamp(12px, 2vw, 20px);
+            font-weight: bold;
+        }
+
+        .banner-content button:hover {
+            background-color: white;
+            color: black;
+            font-size: 20px;
+        } */
+
+        /* .footer {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #f5f5f5;
+        }
+
+        .footer .left-side {
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .footer .left-side .logo {
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .footer .left-side .logo img {
+            width: 40%;
+        }
+
+        .footer .left-side .aboutcont {
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+        }
+
+        .footer .left-side .content2 {
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+        }
+
+        .footer .right-side {
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 40px;
+        }
+
+        .footer .right-side .content3 {
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+        }
+
+        .footer .right-side .icon {
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        .footer .right-side .social {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        @media(max-width:1300px) {
+            .footer {
+                flex-wrap: wrap;
+            }
+        } */
+
+        /* @media screen and (max-width: 1300px) and (min-width: 100px) {
+            .footer{
+                flex-wrap: wrap;
+            }
+        } */
+        /* .ourrecipie {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            padding-bottom: 50px
+        }
+
+        .one {
+            width: 20%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px;
+            position: relative;
+            gap: 30px;
+        }
+
+        .one img {
+            width: 100%;
+            height: auto;
+        }
+
+        .one.inner-one .hearticon img {
+            width: 60px;
+        }
+
+        .one.inner-one .hearticon {
+            position: absolute;
+        }
+        .one .inner-one .hearticon img{
+            width: 60px;
+
+        }
+
+        .btn {
+            padding: 5px 15px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+        } */
+
+        /* 
+
+
+        .footer {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            display: inline;
+        }
+
+        .footer .logo {
+            width: 20%;
+            height: auto;
+            text-align: center;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .footer .logo img {
+            width: 50%;
+        }
+
+        .footer .aboutcont {
+            width: 60%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .footer .aboutcont .list1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 50px;
+            gap: 50px;
+        }
+
+        .footer .aboutcont .list1 ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            font-size: 15px;
+            font-family: jua;
+        }
+
+        .footer .aboutcont .list1 li,
+        .footer .icon i,
+        footer .logo a {
+            cursor: pointer;
+
+        }
+
+        .footer .aboutcont .list2 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .footer .icon {
+            width: 20%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .footer .icon .fa-brands {
+            width: 60px;
+            height: auto;
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 100px) {
+
+            .footer {
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                gap: 50px;
+                justify-content: center;
+                align-items: baseline;
+                font-size: 20px;
+            }
+
+            .footer .aboutcont .list1 {
+                flex-direction: column;
+                justify-content: baseline;
+                gap: 20px;
+                align-items: baseline;
+            }
+
+            .footer .aboutcont .list2 {
+                align-items: baseline;
+            }
+        } */
+
+        /* .footer {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer .logo {
+            width: 20%;
+        }
+
+        .footer .logo img {
+            width: 50%;
+        }
+
+        .footer .aboutcont {
+            width: 60%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-direction: column;
+        }
+
+        .footer .aboutcont .list1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer .aboutcont .list1 ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            font-size: 15px;
+            font-family: jua;
+        }
+
+        .footer .aboutcont .list2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer .aboutcont .list2 li {
+            list-style: none;
+            font-size: 15px;
+            font-family: jua;
+        }
+
+        .footer .icon {
+            width: 20%;
+        }
+
+        .footer .icon i {
+            font-size: 20px;
+        } */
+        /* body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .footer .logo
+         {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .icon{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer .aboutcont{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .footer .logo img {
+            max-width: 100px;
+        }
+
+        .footer .aboutcont .list1 ul,
+        .footer .aboutcont .list2 ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer .aboutcont .list1 ul li,
+        .footer .aboutcont .list2 ul li {
+            margin: 10px 0;
+        }
+
+        .footer .icon i {
+            margin: 0 10px;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                grid-template-columns: 1fr;
+            }
+        } */
+
+
+
+
+
+
+
+
+
+        /* @media(max-width:2560px){
+    .ourrecipie .one .inner-one .btn {
+        color: white;
+        background-color: rgb(31, 28, 28);
+        padding:10px 40px ;
+        position: absolute;
+        font-family: jua;
+        margin-top: 430px;
+        margin-left: 30%;
+        font-size: 20px;
+        border-radius: 30px;
+    }
+
+}
+@media(max-width:1440px){
+    .ourrecipie .one .inner-one .btn {
+        color: white;
+        background-color: rgb(31, 28, 28);
+        padding:8px 25px ;
+        position: absolute;
+        font-family: jua;
+        margin-top: 230px;
+        margin-left: 30%;
+        font-size: 12px;
+        border-radius: 30px;
+    }
+
+}
+@media(max-width:1024px){
+    .ourrecipie .one .inner-one .btn {
+        color: white;
+        background-color: rgb(31, 28, 28);
+        padding: 5px 20px;
+        position: absolute;
+        font-family: jua;
+        margin-top: 160px;
+        margin-left: 23%;
+        font-size: 10px;
+        border-radius: 30px;
+    }
+
+} */
+
+
+
+
+
+        /* 768px */
+
+
+        /* .footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footer .logo {
+        width: 100%;
+    }
+
+    .footer .logo img {
+        width: 20%;
+    }
+
+    .footer .aboutcont {
+        width: 100%;
+    }
+
+    .footer .aboutcont .list1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .aboutcont .list2 {
+        text-align: center;
+    }
+    .footer .icon img{
+       width: 15%;
+    } */
+
+
+        /* 376px */
+
+        /* .footer .aboutcont .list1{
+        font-size: 12px;
+        gap: 25px;
+    }
+    .footer .logo{
+        font-size: 12px;
+    }
+    .footer .aboutcont .list2{
+        font-size: 12px;
+    }
+    .footer .icon img{
+        width: 22%;
+    } */
+    </style>
+</body>
+
+</html>
